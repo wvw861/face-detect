@@ -30,7 +30,7 @@ int main()
    //                                            отрисовка
    for(int i = 0; i<info.size(); i++)
    {
-   cv::rectangle(image, info[0], cv::Scalar(0, 255, 0), 1);
+   cv::rectangle(image, info[i], cv::Scalar(0, 255, 0), 1);
    }
    cv::imshow("Camera", image);
    key = cv::waitKey(10) & 0b11111111;
